@@ -4,9 +4,9 @@
   "homepage": "https://github.com/panlina/css-select-adapter-fs",
   "author": "Jack Lu <jacklu@jacklu.me>",
   "peerDependencies": {
-    "css-select": "~1.3.0-rc0"
+    "css-select": "https://github.com/panlina/css-select.git"
   },
   "devDependencies": {
-    "css-select": "~1.3.0-rc0"
+    "css-select": "https://github.com/panlina/css-select.git"
   }
 }
