@@ -23,6 +23,8 @@ exports.adapter = {
 				return path.basename(element.path);
 			case 'ext':
 				return path.extname(element.path);
+			case 'size':
+				return fs.statSync(element.path).size;
 		}
 	},
 	findAll: function (test, nodes) {
