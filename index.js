@@ -27,6 +27,7 @@ exports.adapter = {
 				return fs.statSync(element.path).size;
 		}
 	},
+	existsOne: function (test, elems) { return elems.some(test); },
 	findAll: function (test, nodes) {
 		var $this = this;
 		var all = [];
