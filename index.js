@@ -25,6 +25,10 @@ exports.adapter = {
 				return path.extname(element.path);
 			case 'size':
 				return fs.statSync(element.path).size;
+			case 'create-time':
+				return new Date(fs.statSync(element.path).birthtime).valueOf();
+			case 'modify-time':
+				return new Date(fs.statSync(element.path).mtime).valueOf();
 		}
 	},
 	existsOne: function (test, elems) { return elems.some(test); },
